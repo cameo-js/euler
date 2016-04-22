@@ -15,6 +15,7 @@ What is the largest prime factor of the number 600851475143 ?
 ### @tailrec [docs](http://www.scala-lang.org/api/current/index.html#scala.annotation.tailrec)
 
 스칼라는 꼬리 재귀 최적화를 하는데 재귀호출마다 새로운 스택을 만들지 않고 같은 스택 프레임을 재활용하기 때문에 루프와 성능차이가 거의 없다고 볼 수 있다.
+꼬리재귀가 아닐때다른 문제로는 스택 프레임의 사이즈가 제한되어있는 상황에서 StackOverflowError 가 발생할 수 있다.
 
 **재귀 호출후에 연산을 수행하면 꼬리 재귀가 아닌데** 그렇게 되면 스칼라의 최적화 혜택?을 받지 못한다.
 
